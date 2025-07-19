@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import {Poppins, Figtree } from "next/font/google";
+import {Poppins} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navigation from "@/components/Section/navigation";
-
-const figtree = Figtree({
-  variable:"--font-figtree",
-  subsets:["latin"]
-})
 
 const poppins = Poppins({
   variable:"--font-poppins",
