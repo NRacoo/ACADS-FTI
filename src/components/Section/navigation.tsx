@@ -52,7 +52,7 @@ export default function Navigation(){
         {/*Mobile navigation view */}
 
         <nav className="md:hidden fixed top-4 right-4 z-50 flex items-center space-x-4">
-            <ModeToggle/>
+            
 
             <motion.button
             onClick={toggleMenu}
@@ -98,6 +98,8 @@ export default function Navigation(){
         {/* mobile Menu overlay*/}
         <AnimatePresence>
             {isOpen &&(
+                <>
+                
                 <motion.div
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
@@ -105,6 +107,9 @@ export default function Navigation(){
                 transition={{duration: 0.3}}
                 className="md:hidden fixed inset-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg z-40 flex items-center justify-center"
                 ref={menuRef}>
+                    <div className="absolute top-6 right-20 z-50">
+                        <ModeToggle/>
+                    </div>
                     <motion.nav
                     initial={{y: 50, opacity: 0}}
                     animate ={{y: 0, opacity:1}}
@@ -133,6 +138,7 @@ export default function Navigation(){
 
                     </motion.nav>
                 </motion.div>
+                </>
             )}
         </AnimatePresence>
 

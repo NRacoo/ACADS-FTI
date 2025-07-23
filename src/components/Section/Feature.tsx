@@ -10,7 +10,7 @@ const Feature = forwardRef<HTMLElement>((props, externalref) => {
         id="Feature" 
         className="min-h-screen md:py-16">
                 <div className="text-center">
-                    <h2 className="font-bold text-6xl md:py-4">Features</h2>
+                    <h2 className="font-bold md:text-8xl text-6xl md:py-4">Features</h2>
                 </div>
 
                 <motion.div

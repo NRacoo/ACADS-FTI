@@ -1,42 +1,19 @@
 "use client"
 import ImageCarousel from "@/components/ui/imageCarousel";
-import LineReveal from "@/components/ui/line-reveal";
 import Reveal from "@/components/ui/text-reveal";
 import {motion, useScroll} from "framer-motion";
 import { AtSign } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react"
 import { useTheme } from "@/lib/use-theme";
+import { activities } from "@/components/hooks/data";
 
-interface Activity {
-    id: number
-    title: string
-    description: string
-    image: string
-    imageAlt: string
-  }
+
 
 export default function aboutUs(){
     const sectionRef = useRef<HTMLDivElement | null> (null)
     //const {scrollYProgress} = useScroll({target: sectionRef, offset: ["start end", "end start" ]})
-    const activities: Activity[] = [
-        {
-          id: 1,
-          title: "WELCOMING PARTY",
-          description:
-            "Welcoming party merupakan sebuah acara yang diselenggarakan oleh massa FTI angkatan atas untuk menyambut kedatangan dari Mahasiswa Baru FTI, acara diselenggarakan secara online dan disajikan dengan mata acara yang bervariatif.",
-          image: "/welpar.png",
-          imageAlt: "Welcoming Party - Online event with new FTI students",
-        },
-        {
-          id: 2,
-          title: "GET TO KNOW (GTK)",
-          description:
-            "Get To Know FTI, Sebuah acara yang dilaksanakan pada masa awal-awal perkuliahan, acara ini dibuat oleh angkatan atas dari mahasiswa baru yang bertujuan untuk mengenalkan Fakultas FTI itu sendiri dan berbagai jurusan didalamnya.",
-          image: "/gtk.png",
-          imageAlt: "Get To Know event - Outdoor gathering with FTI students",
-        },
-      ]
+    
 
       const {theme} = useTheme()
 
@@ -52,7 +29,7 @@ export default function aboutUs(){
         background: theme === "dark" ? "bg-gradient-to-b from-black to-gray-900" : "bg-gradient-to-b from-gray-50 to-white",
         titleText: theme === "dark" ? "text-white" : "text-gray-900",
         descriptionText: theme === "dark" ? "text-white" : "text-black",
-        numberText: theme === "dark" ? "text-cyan-400" : "text-blue-600",
+        numberText: theme === "dark" ? "text-[#b1c9ef]" : "text-[#164b82]",
         cardBackground: theme === "dark" ? "from-cyan-500/20 to-teal-600/20" : "from-blue-500/20 to-indigo-600/20",
         cardInner: theme === "dark" ? "bg-black/50" : "bg-white/80",
         cardBorder: theme === "dark" ? "border-cyan-500/20" : "border-blue-500/20",
@@ -104,11 +81,11 @@ export default function aboutUs(){
             <section className="py-20">
                 <div className="container mx-auto px-4">
         
-                    <div className="text-center">
+                    <div className="text-center mb-4">
                         <div className="flex justify-center items-center gap-4">
 
-                            <div className="bg-black dark:bg-white w-8 h-8 rounded-full flex items-center justify-center">
-                                <AtSign className="w-4 h-4 text-white dark:text-black"/>
+                            <div className="bg-black dark:bg-white w-12 h-12 rounded-full flex items-center justify-center">
+                                <AtSign className="w-8 h-8 text-white dark:text-black"/>
                             </div>
                             <Reveal text="KEGIATAN"
                             delay={0.5}
@@ -118,8 +95,8 @@ export default function aboutUs(){
 
                     <div className="space-y-20">
                         {activities.map((activity, index) => (
-                            <LineReveal key={activity.id} delay={0.2 * (index + 1)} className="w-full">
-                                <div
+                            
+                                <div key={activity.id}
                                     className={`grid lg:grid-cols-2 gap-12 items-center ${
                                         index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
                                     }`}
@@ -178,8 +155,6 @@ export default function aboutUs(){
                                         </div>
                                     </div>
                                     </div>
-
-                            </LineReveal>
                         ))}
                     </div>
 

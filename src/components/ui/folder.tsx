@@ -44,7 +44,7 @@ const Folder: React.FC<FolderProps> = ({
   const maxItems = 3;
   const papers = items.slice(0, maxItems);
   while (papers.length < maxItems) {
-    papers.push(null);
+    papers.push({content: <></>, url:"#"});
   }
 
   const [open, setOpen] = useState(false);
