@@ -1,7 +1,7 @@
 "use client"
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { useRouter } from "next/navigation";
-import { materiList1, materiList2, departments } from "@/components/hooks/data";
+import { materiList1, departments } from "@/components/hooks/data";
 import { Table, TableHeader, TableHead, TableRow, TableBody, TableCell } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";

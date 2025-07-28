@@ -1,7 +1,7 @@
 "use client"
 import ImageCarousel from "@/components/ui/imageCarousel";
 import Reveal from "@/components/ui/text-reveal";
-import {motion, useScroll} from "framer-motion";
+import {motion} from "framer-motion";
 import { AtSign } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react"

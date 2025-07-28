@@ -6,7 +6,6 @@ import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "../ui/dialog"
 import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
 import { ScrollArea, ScrollBar } from "../ui/scroll-area";
-import {motion} from "framer-motion";
 
 
 export default function SemesterIPage(){
@@ -21,7 +20,7 @@ export default function SemesterIPage(){
                     {materiList1.map((materi) => (
                         <Card 
                         key={materi.id}
-                        className="overflow-hidden cursor-pointer bg-gradient-to-t from-[#D55DEEF] to-[#eff8d4] dark:bg-gradient-to-br dark:from-cyan-500/20 dark:to-gray-600/20">
+                        className="overflow-hidden cursor-pointer bg-gradient-to-t from-sky-500 to-indigo-600 dark:bg-gradient-to-br dark:from-cyan-500/20 dark:to-gray-600/20">
                             <div className="relative">
                                 <div className="aspect-video overflow-hidden px-4">
                                     <Image
