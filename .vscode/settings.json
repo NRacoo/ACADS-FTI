@@ -1,4 +1,9 @@
 {
     "workbench.preferredDarkColorTheme": "Default Dark Modern",
-    "workbench.colorTheme": "Theme Darker"
+    "workbench.colorTheme": "Theme Darker",
+    "editor.dropIntoEditor.preferences": [
+
+    ],
+    "debug.autoExpandLazyVariables": "auto",
+    "github.copilot.chat.agent.autoFix": false
 }

@@ -316,17 +316,72 @@ export const materiSemester2: courseDept[] = [
         image:"/materi/fisika.png",
         imageAlt:"Kimia Dasar IIA",
         file:[
-          {id:"catatan", name:"Catatan", link:"hhttps://drive.google.com/drive/folders/1fIQPrdgYthjsNILUHMxQpJoTHY2M7nOH"},
-          {id:"aturan", name:"Aturan Perkuliahan", link:"https://drive.google.com/drive/folders/1wYV3uKICd7BfX-RuynKwE6RNnJrXPQn3"},
-          {id:"sil", name:"Silabus", link:"https://drive.google.com/drive/folders/1LL-Rcy2LWAirFOasw0vlYO8p0RGtXInh?usp=sharing"},
-          {id:"kbf", name:"KBF & Kuis", link:"https://drive.google.com/drive/folders/1i-eJ4fdxMXwgzM25AiTiBq-Dn0zSn7Tr?usp=sharing"},
-          {id:"ppt", name:"Power Point Dosen", link:"https://drive.google.com/drive/folders/1uDvsLaof2unVVJm_sMKVrbgPylH-6cYe?usp=sharing"},
-          {id:"up", name:"UP & Ujian Pengganti", link:"https://drive.google.com/drive/folders/1MKDj-ShnxKXhXOTHWf7AU0e44g0M5BCg?usp=sharing"},
-          {id:"uas", name:"UAS", link:"https://drive.google.com/drive/folders/1YtCRXBaGFTCtL_lz4orPKN6w3JqBVhzm?usp=sharing"},
-          {id:"latsol", name:"Latihan Soal", link:"https://drive.google.com/drive/folders/1YtCRXBaGFTCtL_lz4orPKN6w3JqBVhzm?usp=sharing"},
-          {id:"uts", name:"UTS", link:"https://drive.google.com/drive/folders/1GxwZRSJCPej1XIeZqJTPbcl5TgscYZJ1?usp=sharing"},
+          {id:"catatan", name:"Catatan", link:"https://drive.google.com/drive/folders/1CHNVDPytYzrfF5FdITyCHGa1Wmwofbgw?usp=share_link"},
+          {id:"info", name:"Informasi Umum", link:"https://drive.google.com/drive/folders/1w7aLCiKnjOjSZCWfJZSLSHlwvUTrIysM?usp=share_link"},
+          {id:"sil", name:"LCE", link:"https://drive.google.com/drive/folders/1w7aLCiKnjOjSZCWfJZSLSHlwvUTrIysM?usp=share_link"},
+          {id:"kbf", name:"KBF & Kuis", link:"https://drive.google.com/drive/folders/1PnfksxJdE86x5gqjKCImay7vFIvX6CM5?usp=sharing"},
+          {id:"ppt", name:"Power Point Dosen", link:"https://drive.google.com/drive/folders/1S9FYr5eUuphAuiU6YDPadoS32vwkGgLS?usp=sharing"},
+          {id:"up", name:"UP & Ujian Pengganti", link:"https://drive.google.com/drive/folders/1nsDO2S0qchSaQ9-7kp_Ac2lj6-VIi_Yd?usp=sharing"},
+          {id:"uas", name:"UAS", link:"https://drive.google.com/drive/folders/1YdhPtnqG4N720kQKnH5hAvCV8lDBDf92?usp=sharing"},
+          {id:"latsol", name:"Latihan Soal", link:"https://drive.google.com/drive/folders/1rzGX2a7h8ND_V9DwwyNj2fY8TTsZSIKw?usp=sharing"},
+          {id:"uts", name:"UTS", link:"https://drive.google.com/drive/folders/1Ydeygiw7udQM553ChF9xtiMCn_p3oYl6?usp=sharing"},
+          {id:"ltm", name:"LTM", link:"https://drive.google.com/drive/folders/1L8-YSLz1jKQgXlOpQhccfMM6fIhGL3td?usp=sharing"},
         ]
       }, 
+      {
+        id:"PRD",
+        name:"Pengantar Rekayasa dan Desain",
+        image:"/materi/prd.png",
+        imageAlt:"Pengantar Rekayasa dan Desain",
+        file:[
+          {id:"catatan", name:"Catatan", link:"https://drive.google.com/drive/folders/1Yv_F0n8Aoy7CbjCOzaY1mMTZjp4upBE7?usp=sharing"},
+          {id:"pr", name:"Proyek", link:"https://drive.google.com/drive/folders/1YxmMDBNzVI8i6cLBkUGRjq-FTpKrWdED?usp=sharing"},
+          {id:"pst", name:"Pustaka", link:"https://drive.google.com/drive/folders/1Sh4r6zgobbR-h2jacxNz89pkoThoBWVm?usp=sharing"},
+          {id:"kan", name:"Tugas Kanvas", link:"https://drive.google.com/drive/folders/15BOoITcGniyfHPVRHmSVGnWiAZoDVfCo?usp=sharing"},
+          {id:"ppt", name:"Power Point Dosen", link:"https://drive.google.com/drive/folders/1u_76qa4TvmS2fM7Chf8vuIt7Yu5jGWWf?usp=sharing"},
+          {id:"up", name:"Latihan & UTS", link:"https://drive.google.com/drive/folders/1b_kVaqs6QlGDvOodgf8svYujVXRj_1VD?usp=sharing"},
+        ]
+      }, 
+       {
+        id:"Olahraga",
+        name:"Olahraga",
+        image:"/materi/olahraga.png",
+        imageAlt:"Olahraga",
+        file:[
+          {id:"catatan", name:"Catatan", link:"https://drive.google.com/drive/folders/1ddBNJ2RvR2uNGagmBJCJc_p8Ua1GFFWK?usp=sharing"},
+          {id:"ttb", name:"Tata Tertib", link:"https://drive.google.com/file/d/1huKMI5WJjdTDR0SxuxpVrxfq-Vtsl7dy/view?usp=sharing"},
+          {id:"sil", name:"Pustaka", link:"https://drive.google.com/drive/folders/1Zl3F2EINJb5rXwQ0ZsMV7ThLXXjnGxpK?usp=sharing"},
+          {id:"ppt", name:"Power Point Dosen", link:"https://drive.google.com/drive/folders/12vt9nk2hiRMETPIOdjgfxxOezt4Nuyso?usp=sharing"},
+          {id:"uas", name:"UAS", link:"https://drive.google.com/drive/folders/1aqtUMphqLdFzhB0bBUsvk4CadBd6gSKm"},
+        ]
+      },
+       {
+        id:"inggris",
+        name:"Bahasa Inggris",
+        image:"/materi/Inggris.png",
+        imageAlt:"Bahasa Inggris",
+        file:[
+          {id:"ref", name:"Reference", link:"https://drive.google.com/drive/folders/1yep2D_9cnP1xYvfi2LOSpt-cWGrztmep"},
+          {id:"sil", name:"Syllabus", link:"https://drive.google.com/drive/folders/10TH01Qud14YfGl47XD0Rn7K7Nst5X22s"},
+          {id:"uts", name:"UTS", link:"https://drive.google.com/drive/folders/1mBd2mmHItka67stElFBtbVxM8sg7RA_K?usp=sharing"},
+          {id:"ppt", name:"Power Point Dosen", link:"https://drive.google.com/drive/folders/1Ymt_MqOKiVZqCn6pr8wPaKzDcSITaHmR"},
+          {id:"uas", name:"UAS", link:"https://drive.google.com/drive/folders/1mKIHAV_liSxyDlKejrp9cl0xbC7fPCdO"},
+        ]
+      },
+       {
+        id:"indonesia",
+        name:"Bahasa Indonesia",
+        image:"/materi/Indonesia.png",
+        imageAlt:"Bahasa Indonesia",
+        file:[
+          {id:"ran", name:"Rangkuman", link:"https://drive.google.com/drive/folders/1D-eZmBQHBwi-M8AjlgIU5mOuLCJRj6zZ"},
+          {id:"tug", name:"Kuis & Tugas", link:"https://drive.google.com/drive/folders/1CMsv3JF8KDxgsT8cuqTpHnX44UT6EWrq"},
+          {id:"uts", name:"UTS", link:"https://drive.google.com/drive/folders/1BjOkaSmPnSTy7tPfC4NKw0NRNMFxn3Ok"},
+          {id:"ppt", name:"Power Point Dosen", link:"https://drive.google.com/drive/folders/1B8KdfVkDswZgvgka6dmGqpFLsPibXeR4"},
+          {id:"uas", name:"UAS", link:"https://drive.google.com/drive/folders/1efzSzypHHSavs-nndclgOXRTVVA8VbDf"},
+        ]
+      },
+
     ]
   }
 ]

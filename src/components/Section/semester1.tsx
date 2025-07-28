@@ -33,7 +33,7 @@ export default function SemesterIPage(){
                                 </div>
                             </div>
                             <CardContent className="space-y-4">
-                                <h3 className="text-xl font-bold">{materi.name}</h3>
+                                <h3 className="text-xl font-bold truncate">{materi.name}</h3>
                                 <div className="flex flex-col">
                                     <Dialog>
                                         <DialogTrigger asChild>

@@ -1,11 +1,13 @@
 import { useState } from "react"
-import { departments } from "../hooks/data";
+import { materiSemester1, materiSemester2 } from "../hooks/data";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
+import { Card, CardContent } from "../ui/card";
+import Image from "next/image";
 
 
 export default function Semester2Page() {
     const [selectDept, setSelectDept] = useState<string>("");
-    const selectDeptData = departments.find((dept) => dept.id === selectDept);
+    const selectDeptData = materiSemester2.find((dept) => dept.id === selectDept);
 
     return (
         <div className="min-h-screen bg-linear-to-t from-sky-400">
@@ -15,18 +17,18 @@ export default function Semester2Page() {
                 </div>
 
                 <div className="space-y-4">
-                    <h2 className="text-2xl font-semibold dark:text-white text-center">Pilih Jurusan</h2>
-                    <div className="items-center justify-center flex">
                         <Select value={selectDept} onValueChange={setSelectDept}>
-                            <SelectTrigger>
-                                <SelectValue 
-                                placeholder="Pilih Jurusan"/>
-                            </SelectTrigger>
+                                <div className="items-center justify-center flex">
+                                    <SelectTrigger className="w-full max-w-lg">
+                                        <SelectValue 
+                                        placeholder="Pilih Jurusan"/>
+                                    </SelectTrigger>
+                                </div>
                             <SelectContent>
-                                {departments.map((dept) => (
+                                {materiSemester2.map((dept) => (
                                     <div>
                                         <SelectItem
-                                        value={dept.name}
+                                        value={dept.id}
                                         key={dept.id}>
                                             {dept.name}
                                         </SelectItem>
@@ -35,12 +37,33 @@ export default function Semester2Page() {
                                 ))}
                             </SelectContent>
                         </Select>
-                        {selectDept && (
-                            <div className="">
-                                
+                        {selectDeptData ? (
+                            <>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 gap-6 mb-8 py-20">
+                                {selectDeptData.course.map((course) => (
+                                    <Card key={course.id} className="overflow-hidden cursor-pointer">
+                                        <div className="relative">
+                                            <div className="aspect-video overflow-hidden px-4">
+                                            <Image
+                                            src={course.image || "Gambar tidak tersedia"}
+                                            alt={course.imageAlt}
+                                            width={300}
+                                            height={200}
+                                            unoptimized
+                                            className="object-cover w-full h-full"/>
+                                            </div>
+                                        </div>
+
+                                        <CardContent className="space-y-4">
+                                            <h3 className="text-lg font-semibold truncate">{course.name}</h3>
+                                        </CardContent>
+                                    </Card>
+                                ))}
                             </div>
+                            </>
+                        ) : (
+                            <p className="text-center text-lg font-semibold dark:text-white">Silahkan pilih jurusan untuk melihat materi</p>
                         )}
-                    </div>
                 </div>
             </section>
         </div>
