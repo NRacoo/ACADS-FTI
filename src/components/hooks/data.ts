@@ -170,55 +170,6 @@ export const materiList1: materiSemester1[] = [
   },
 ]
 
-type materiSemester2 = {
-  id: number,
-  name: string,
-  sks: string,
-}
-
-export const materiList2: materiSemester2[] = [
-  {
-    id:1,
-    name:"Matematika Dasar IA",
-    sks: "4",
-  },
-  {
-    id:2,
-    name:"Kimia Dasar I",
-    sks:"3"
-  },
-  {
-    id:3,
-    name:"Fisika Dasar I",
-    sks:"3"
-  },
-  {
-    id:4,
-    name:"Berpikir Komputasional",
-    sks:"2",
-  },
-  {
-    id:5,
-    name:"Pengantar Prinsip Keberlanjutan",
-    sks:"2",
-  },
-  {
-    id:6,
-    name:"Pancasila",
-    sks:"2",
-  },
-  {
-    id:7,
-    name:"Laboratorium Kimia Dasar",
-    sks:"1"
-  },
-  {
-    id:8,
-    name:"Laboratorium Fisika Dasar",
-    sks:"1"
-  },
-]
-
 export type Course = {
   id: number
   name: string
@@ -297,4 +248,85 @@ export const departments: Department[] = [
       { id: 35, name: "Bahasa Indonesia", sks: "2" },
     ],
   },
+]
+
+
+
+export type folderDept = {
+  id: string;
+  name: string;
+  link: string;
+}
+
+export type materiSem2 = {
+  id: string;
+  name: string;
+  image: string;
+  imageAlt:string
+  file: folderDept[];
+}
+
+
+export type courseDept = {
+  id: string;
+  name: string;
+  course: materiSem2[];
+}
+
+export const materiSemester2: courseDept[] = [
+  {
+    id: "tekim",
+    name:"Teknik Kimia",
+    course:[
+      {id:"MatemaIIA",
+        name:"Matematika IIA",
+        image:"/materi/kalkulus.png", 
+        imageAlt:"Matematika IIA",
+        file:[
+          {id:"catatan", name:"Catatan", link:"https://drive.google.com/drive/folders/1-JHEfuBxXnIlbVgEa-YOOLh3ldJvtooE?usp=share_link"},
+          {id:"silabus", name:"Silabus", link:"https://drive.google.com/drive/folders/1-Or1nAsukFjdlqiEuNCMlldwiPciUNY9?usp=sharing"},
+          {id:"tutor", name:"Tutorial", link:"https://drive.google.com/drive/folders/1-1pc_kdePp4kk7j1e9RTneA-bw94fOcw"},
+          {id:"kbf", name:"KBF & Kuis", link:"https://drive.google.com/drive/folders/14tTurpMIk_dzikpZcF7IzuJVkZyvF2VV?usp=sharing"},
+          {id:"ppt", name:"Power Point Dosen", link:"https://drive.google.com/drive/folders/1-09Qu12j6FQEyicNn007xNZQXwnjCpnm?usp=share_link"},
+          {id:"up", name:"UP & Ujian Pengganti", link:"https://drive.google.com/drive/folders/16CrZvb-onMqbjJfNlq9i6OqROCo1AfT_?usp=sharing"},
+          {id:"uas", name:"UAS", link:"https://drive.google.com/drive/folders/1-D6BaRo781srVQmRXjlzmBpFV1i-NmcG?usp=share_link"},
+          {id:"latsol", name:"Latihan Soal", link:"https://drive.google.com/drive/folders/1SiXj1G7rH6jPepZm846lSXTgC_hBPxlr"},
+          {id:"uts", name:"UTS", link:"https://drive.google.com/drive/folders/1-8GpsSEFURdWwvlPzbCZmrQGFPvcJAqm"},
+        ]
+      },{
+        id:"kidasIIA",
+        name:"Kimia Dasar IIA",
+        image:"/materi/kimia.png",
+        imageAlt:"Kimia Dasar IIA",
+        file:[
+          {id:"catatan", name:"Catatan", link:"hhttps://drive.google.com/drive/folders/1fIQPrdgYthjsNILUHMxQpJoTHY2M7nOH"},
+          {id:"aturan", name:"Aturan Perkuliahan", link:"https://drive.google.com/drive/folders/1wYV3uKICd7BfX-RuynKwE6RNnJrXPQn3"},
+          {id:"sil", name:"Silabus", link:"https://drive.google.com/drive/folders/1LL-Rcy2LWAirFOasw0vlYO8p0RGtXInh?usp=sharing"},
+          {id:"kbf", name:"KBF & Kuis", link:"https://drive.google.com/drive/folders/1i-eJ4fdxMXwgzM25AiTiBq-Dn0zSn7Tr?usp=sharing"},
+          {id:"ppt", name:"Power Point Dosen", link:"https://drive.google.com/drive/folders/1uDvsLaof2unVVJm_sMKVrbgPylH-6cYe?usp=sharing"},
+          {id:"up", name:"UP & Ujian Pengganti", link:"https://drive.google.com/drive/folders/1MKDj-ShnxKXhXOTHWf7AU0e44g0M5BCg?usp=sharing"},
+          {id:"uas", name:"UAS", link:"https://drive.google.com/drive/folders/1YtCRXBaGFTCtL_lz4orPKN6w3JqBVhzm?usp=sharing"},
+          {id:"latsol", name:"Latihan Soal", link:"https://drive.google.com/drive/folders/1YtCRXBaGFTCtL_lz4orPKN6w3JqBVhzm?usp=sharing"},
+          {id:"uts", name:"UTS", link:"https://drive.google.com/drive/folders/1GxwZRSJCPej1XIeZqJTPbcl5TgscYZJ1?usp=sharing"},
+        ]
+      }, 
+      {
+        id:"FidasIIA",
+        name:"Fisika Dasar IIA",
+        image:"/materi/fisika.png",
+        imageAlt:"Kimia Dasar IIA",
+        file:[
+          {id:"catatan", name:"Catatan", link:"hhttps://drive.google.com/drive/folders/1fIQPrdgYthjsNILUHMxQpJoTHY2M7nOH"},
+          {id:"aturan", name:"Aturan Perkuliahan", link:"https://drive.google.com/drive/folders/1wYV3uKICd7BfX-RuynKwE6RNnJrXPQn3"},
+          {id:"sil", name:"Silabus", link:"https://drive.google.com/drive/folders/1LL-Rcy2LWAirFOasw0vlYO8p0RGtXInh?usp=sharing"},
+          {id:"kbf", name:"KBF & Kuis", link:"https://drive.google.com/drive/folders/1i-eJ4fdxMXwgzM25AiTiBq-Dn0zSn7Tr?usp=sharing"},
+          {id:"ppt", name:"Power Point Dosen", link:"https://drive.google.com/drive/folders/1uDvsLaof2unVVJm_sMKVrbgPylH-6cYe?usp=sharing"},
+          {id:"up", name:"UP & Ujian Pengganti", link:"https://drive.google.com/drive/folders/1MKDj-ShnxKXhXOTHWf7AU0e44g0M5BCg?usp=sharing"},
+          {id:"uas", name:"UAS", link:"https://drive.google.com/drive/folders/1YtCRXBaGFTCtL_lz4orPKN6w3JqBVhzm?usp=sharing"},
+          {id:"latsol", name:"Latihan Soal", link:"https://drive.google.com/drive/folders/1YtCRXBaGFTCtL_lz4orPKN6w3JqBVhzm?usp=sharing"},
+          {id:"uts", name:"UTS", link:"https://drive.google.com/drive/folders/1GxwZRSJCPej1XIeZqJTPbcl5TgscYZJ1?usp=sharing"},
+        ]
+      }, 
+    ]
+  }
 ]
