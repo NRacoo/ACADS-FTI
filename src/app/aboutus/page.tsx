@@ -44,23 +44,27 @@ export default function aboutUs(){
         <div className="min-h-screen bg-linear-to-t from-sky-400">
             {/* Carousel */}
             <section className="py-16 lg:py-20">
-                    <div className="text-center mb-4">
-                        <h1 className="text-4xl md:text-6xl font-bold">Tentang FTI</h1>
-                    </div>   
                     <ImageCarousel/>
             </section>
 
-            <section ref={sectionRef} className="relative hidden lg:block py-20"> 
+            <section ref={sectionRef} className="relative lg:block "> 
+                    <div className="text-center mb-4">
+                        <h1 className="text-4xl md:text-6xl font-bold">Tentang FTI</h1>
+                    </div>   
                     <motion.div className="text-center grid md:grid-cols-2 sm:grid-cols-1 items-center">
+                        <motion.div  className={`flex justify-center items-center mb-4`} 
+                        whileInView={{opacity: 1, y:0}}
+                        initial={{opacity:0, y:100}}
+                        transition={{ease:"easeInOut", duration: 0.7}}>
+                            <Image src={"/fti4.png"} height={400} width={400} alt="fti24" className="rounded-lg shadow-lg object-cover" />
+                        </motion.div>
                         <motion.div 
                         whileInView={{opacity: 1, y:0}}
                         initial={{opacity:0, y:100}}
                         transition={{ease:"easeInOut", duration: 0.7}}
-                         className="text-justify pl-10 leading-relaxed" >
+                         className="text-center md:text-justify px-4 leading-relaxed" >
                             <Reveal 
-                            text=" Fakultas Teknologi Industri di Institut Teknologi Bandung &#40;FTI ITB&#41; resmi berdiri pada tahun 1973.     
-                            
-                            Namun, sebagian kegiatan akademik di departemen-departemen yang tergabung dalam FTI ITB sudah berlangsung lebih dulu. Sampai Desember 2005,
+                            text=" Fakultas Teknologi Industri di Institut Teknologi Bandung &#40;FTI ITB&#41; resmi berdiri pada tahun 1973. Namun, sebagian kegiatan akademik di departemen-departemen yang tergabung dalam FTI ITB sudah berlangsung lebih dulu. Sampai Desember 2005,
                             departemen-departemen yang berada di bawah FTI ITB meliputi Departemen Teknik Kimia, Teknik Mesin, Teknik Elektro, Teknik Fisika,
                             Teknik Industri, Teknik Informatika, dan Teknik Penerbangan."
                             duration={0.5}
@@ -69,12 +73,6 @@ export default function aboutUs(){
                             
                         </motion.div>
 
-                        <motion.div  className={`flex justify-center items-center`} 
-                        whileInView={{opacity: 1, y:0}}
-                        initial={{opacity:0, y:100}}
-                        transition={{ease:"easeInOut", duration: 0.7}}>
-                            <Image src={"/fti4.png"} height={400} width={400} alt="fti24" className="rounded-lg shadow-lg object-cover" />
-                        </motion.div>
                     </motion.div>   
             </section>
 

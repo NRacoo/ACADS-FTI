@@ -16,7 +16,7 @@ export default function SemesterIPage(){
                     <h1 className="font-bold text-4xl md:text-6xl"> Semester 1 </h1>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 py-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 py-5">
                     {materiList1.map((materi) => (
                         <Card 
                         key={materi.id}
