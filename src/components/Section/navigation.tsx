@@ -20,6 +20,9 @@ export default function Navigation(){
     },
     {
         name:"Calc", href:"/gpa"
+    }, 
+    {
+        name:"PomoTimer", href:"/pomo",
     }]
     
 

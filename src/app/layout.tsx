@@ -3,6 +3,7 @@ import {Poppins} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navigation from "@/components/Section/navigation";
+import ftiLogo from  '../../public/ftilogo.png'
 
 const poppins = Poppins({
   variable:"--font-poppins",
@@ -12,7 +13,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "ACADS FTI ",
-  description: "",
+  icons:{
+    icon:ftiLogo.src
+  },
 };
 
 export default function RootLayout({

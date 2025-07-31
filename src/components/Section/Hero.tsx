@@ -57,11 +57,13 @@ export default function HeroSection({featureRef} : {featureRef : React.RefObject
                       <Button
                       className=" bg-[#B1C9EF] hover:bg-[#D5DEEF] sm:w-fit px-12 py-4 rounded-full"
                       onClick={() => Router.push("/library")}
-                      >Mulai Belajar</Button>
-                    <Button
-                    className="bg-[#F0F3FA] hover:bg-[#D5DEEF] sm:w-fit rounded-full px-12 py-4"
-                    onClick={() => featureRef.current?.scrollIntoView({behavior:"smooth"})}
-                    >Lihat Semua Tautan</Button>
+                      >Mulai Belajar
+                      </Button>
+                      <Button
+                        className="bg-[#F0F3FA] hover:bg-[#D5DEEF] sm:w-fit rounded-full px-12 py-4"
+                        onClick={() => featureRef.current?.scrollIntoView({behavior:"smooth"})}
+                        >Lihat Semua Tautan
+                      </Button>
                 </div>
             </div>
 
@@ -71,7 +73,7 @@ export default function HeroSection({featureRef} : {featureRef : React.RefObject
                     <path fill="#B1C9EF" d="M37.1,-60.2C46.7,-51.6,52,-38.9,59.7,-26.1C67.4,-13.2,77.6,-0.3,78.5,13.2C79.5,26.6,71.3,40.6,60.8,52.5C50.3,64.4,37.4,74.1,24.5,73.2C11.6,72.2,-1.4,60.5,-12.3,52.5C-23.3,44.5,-32.2,40.1,-40.3,33.4C-48.3,26.8,-55.4,17.9,-56.8,8.2C-58.2,-1.6,-53.9,-12.1,-51.5,-26C-49,-39.9,-48.4,-57.2,-40.2,-66.4C-31.9,-75.6,-15.9,-76.7,-1.1,-75C13.8,-73.4,27.6,-68.9,37.1,-60.2Z" transform="translate(100 100)" />
                 </svg>
                 </div>
-                <Image src={"/ftilogop.png"} alt="FTI-logo" width={600} height={400} className="rounded-full object-contain z-10 relative"/>
+                <Image src={"/ftilogo.png"} alt="FTI-logo" width={600} height={400} className="rounded-full object-contain z-10 relative"/>
             </div>
 
         </div>
