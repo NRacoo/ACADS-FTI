@@ -20,7 +20,7 @@ export default function SemesterIPage(){
                     {materiList1.map((materi) => (
                         <Card 
                         key={materi.id}
-                        className="overflow-hidden cursor-pointer bg-gradient-to-t from-sky-500 to-indigo-600 dark:bg-gradient-to-br dark:from-cyan-500/20 dark:to-gray-600/20">
+                        className="overflow-hidden cursor-pointer bg-white/20 backdrop-blur-md ">
                             <div className="relative">
                                 <div className="aspect-video overflow-hidden px-4">
                                     <Image

@@ -46,7 +46,7 @@ export default function Semester2Page() {
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 gap-6 mb-8 py-5">
                                 {selectDeptData.course.map((course) => (
                                     
-                                        <Card key={course.id} className="overflow-hidden cursor-pointer">
+                                        <Card key={course.id} className="overflow-hidden cursor-pointer bg-white/20 backdrop-blur-md ">
                                             <div className="relative">
                                                 <div className="aspect-video overflow-hidden px-4">
                                                 <Image
