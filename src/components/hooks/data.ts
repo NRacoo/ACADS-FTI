@@ -863,3 +863,16 @@ export const materiSemester2: courseDept[] = [
     ]
   }
 ]
+
+export type jurusan ={
+  id:number;
+  name:string;
+  himpunan:string;
+  ilmu:string;
+  prospekKerja:string;
+  gaji:number
+}
+
+export const jurusanDept: jurusan[] =[
+
+]
