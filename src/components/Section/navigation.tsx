@@ -23,6 +23,9 @@ export default function Navigation(){
     }, 
     {
         name:"PomoTimer", href:"/pomo",
+    },
+    {
+        name:"Contact Us", href:"/contact"
     }]
     
 
