@@ -69,7 +69,7 @@ export default function ContactPage() {
         {/* Right side - Mobile Phones Illustration */}
         <div className="relative flex items-center justify-center mx-auto">
           {/* Background Circle */}
-          <div className="absolute inset-0 z-10 overflow-hidden rounded-full"><Ripple/></div>
+          <div className="absolute inset-0 z-10 overflow-hidden rounded-full hidden md:block"><Ripple/></div>
 
           {/* Phone 1 */}
           <div className="relative z-10 transform -translate-x-8">
