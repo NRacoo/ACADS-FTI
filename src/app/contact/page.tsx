@@ -67,7 +67,7 @@ export default function ContactPage() {
         </div>
 
         {/* Right side - Mobile Phones Illustration */}
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex items-center justify-center mx-auto">
           {/* Background Circle */}
           <div className="absolute inset-0 z-10 overflow-hidden rounded-full"><Ripple/></div>
 
@@ -84,7 +84,7 @@ export default function ContactPage() {
           </div>
 
           {/* Phone 2 */}
-          <div className="relative z-20 transform rotate-30 -translate-x-10 -translate-y-4">
+          <div className="relative z-20 transform rotate-5 md:rotate-20 -translate-x-10 md:-translate-y-4 ">
             <div className="w-48 h-96 bg-black rounded-3xl p-2 shadow-2xl">
               <div className="w-full h-full bg-gradient-to-br from-sky-300 to-sky-500 rounded-2xl relative overflow-hidden">
                 {/* Notch */}
