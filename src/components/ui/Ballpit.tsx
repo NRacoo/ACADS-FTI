@@ -449,6 +449,7 @@ class W {
 }
 
 class Y extends MeshPhysicalMaterial {
+  defines: {[key: string]: any} ={};
   uniforms: { [key: string]: { value: any } } = {
     thicknessDistortion: { value: 0.1 },
     thicknessAmbient: { value: 0 },
