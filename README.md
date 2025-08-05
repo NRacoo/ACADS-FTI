@@ -12,3 +12,7 @@ Website ini merupakan platform terpadu untuk mahasiswa dalam mengakses berbagai 
 - Kalkulator Indeks
 - Pomodoro Timer
 - Survei FTI
+
+
+##Pengembang
+- Aria Aura Rachman
