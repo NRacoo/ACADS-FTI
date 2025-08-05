@@ -34,10 +34,10 @@ export default function Footer() {
             <div className="container mx-auto px-4 py-8">
                 <div className="flex md:flex-row flex-col gap-4 md:items-center justify-between">
                     <div>
-                        <div className="flex items-center justify-center space-x-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full w-50">
+                        <div className="flex items-start space-x-2">
                             <Link className="cursor-pointer flex items-center" href={"/"}>
                                 <Image src={"/ftilogo.png"} width={50} height={50} alt="logo"/>
-                                <span className="font-bold text-xl">ACADS-FTI</span>
+                                <span className="font-bold text-2xl">ACADS-FTI</span>
                             </Link>
                         </div>
                     </div>
