@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navigation from "@/components/Section/navigation";
 import ftiLogo from  '../../public/ftilogo.png'
+import Footer from "@/components/Section/Footer";
 
 const poppins = Poppins({
   variable:"--font-poppins",
@@ -36,8 +37,10 @@ export default function RootLayout({
         enableSystem
         disableTransitionOnChange>
           <Navigation/>
-          {children}
-
+          <main>
+            {children}
+          </main>
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
