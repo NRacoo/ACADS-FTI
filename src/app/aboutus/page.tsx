@@ -47,7 +47,7 @@ export default function aboutUs(){
                     <ImageCarousel/>
             </section>
 
-            <section ref={sectionRef} className="relative lg:block "> 
+            <section ref={sectionRef} className=" lg:block max-w-sceren-xl mx-auto px-4 "> 
                     <motion.div className="text-center mb-4"
                         whileInView={{opacity: 1, y:0}}
                         initial={{opacity:0, y:100}}
@@ -67,7 +67,7 @@ export default function aboutUs(){
                         transition={{ease:"easeInOut", duration: 0.7}}
                          className=" md:text-justify leading-relaxed" >
                             <Reveal 
-                            text=" Fakultas Teknologi Industri di Institut Teknologi Bandung &#40;FTI ITB&#41; resmi berdiri pada tahun 1973. Namun, sebagian kegiatan akademik di departemen-departemen yang tergabung dalam FTI ITB sudah berlangsung lebih dulu. Sampai Desember 2005,
+                            text="Fakultas Teknologi Industri di Institut Teknologi Bandung &#40;FTI ITB&#41; resmi berdiri pada tahun 1973. Namun, sebagian kegiatan akademik di departemen-departemen yang tergabung dalam FTI ITB sudah berlangsung lebih dulu. Sampai Desember 2005,
                             departemen-departemen yang berada di bawah FTI ITB meliputi Departemen Teknik Kimia, Teknik Mesin, Teknik Elektro, Teknik Fisika,
                             Teknik Industri, Teknik Informatika, dan Teknik Penerbangan."
                             duration={0.5}
@@ -102,16 +102,53 @@ export default function aboutUs(){
                                     initial={{opacity:0, y:100}}
                                     transition={{ease:"easeInOut", duration: 0.7}}>Visi</motion.h1>
                                 <Reveal
-                                text="“Menjadi Fakultas yang unggul, bermartabat, mandiri, dan diakui dunia di bidang teknologi industri serta memandu perubahan yang mampu meningkatkan kesejahteraan bangsa Indonesia dan dunia”."/>
+                                text="Menjadi Fakultas yang unggul, bermartabat, mandiri, dan diakui dunia di bidang teknologi industri serta memandu perubahan yang mampu meningkatkan kesejahteraan bangsa Indonesia dan dunia."/>
                             </div>
                         </motion.div>
-                        <motion.div className={`flex hidden md:block translate-x-1/8`}
+                        <motion.div className={`flex hidden md:block pl-50`}
                         whileInView={{opacity: 1, y:0}}
                         initial={{opacity:0, y:100}}
                         transition={{ease:"easeInOut", duration: 0.7}}>
                             <Image width={400} height={400} alt="visi misi" className="rounded-lg shadow-lg object-cover" src={"/visi.png"}/>
                         </motion.div>
 
+                    </motion.div>
+
+                    <motion.h1 
+                        className="block md:hidden text-center py-4 text-4xl font-bold"
+                        whileInView={{opacity: 1, y:0}}
+                        initial={{opacity:0, y:100}}
+                        transition={{ease:"easeInOut", duration: 0.7}}>Misi</motion.h1>
+                    <motion.div className="py-4 grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1">
+                        <motion.div className={`flex block md:hidden `}
+                        whileInView={{opacity: 1, y:0}}
+                        initial={{opacity:0, y:100}}
+                        transition={{ease:"easeInOut", duration: 0.7}}>
+                            <Image width={400} height={400} alt="visi misi" className="rounded-lg shadow-lg object-cover" src={"/visi.png"}/>
+                        </motion.div>
+                        <motion.div className={`flex hidden md:block translate-x-58`}
+                        whileInView={{opacity: 1, y:0}}
+                        initial={{opacity:0, y:100}}
+                        transition={{ease:"easeInOut", duration: 0.7}}>
+                            <Image width={400} height={400} alt="visi misi" className="rounded-lg shadow-lg object-cover" src={"/visi.png"}/>
+                        </motion.div>
+
+                        <motion.div
+                        whileInView={{opacity: 1, y:0}}
+                        initial={{opacity:0, y:100}}
+                        transition={{ease:"easeInOut", duration: 0.7}}
+                        className="py-4 md:py-0">
+                            <div className="flex flex-col">
+                                <motion.h1 
+                                    className="hidden md:block text-center py-4 text-4xl font-bold"
+                                    whileInView={{opacity: 1, y:0}}
+                                    initial={{opacity:0, y:100}}
+                                    transition={{ease:"easeInOut", duration: 0.7}}>Misi</motion.h1>
+                                <Reveal
+                                text="Menciptakan, berbagi dan menerapkan ilmu pengetahuan dan teknologi dalam bidang teknologi industri serta menghasilkan sumber daya insani yang unggul untuk menjadikan Indonesia dan dunia lebih baik"/>
+                            </div>
+                        </motion.div>
+                        
                     </motion.div>
             </section>
 

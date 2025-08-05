@@ -3,7 +3,7 @@ import Android from "@/components/magicui/android";
 import { Ripple } from "@/components/magicui/ripple";
 import { Phone, Globe, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
-
+import Image from "next/image";
 
 export default function ContactPage() {
     return (
@@ -36,7 +36,7 @@ export default function ContactPage() {
             </Link>
             </div>
 
-            {/* Website */}
+            {/* Line */}
             <div className="flex items-center space-x-4">
                 <Link className="cursor-pointer flex items-center gap-2" href={"https://lin.ee/0bkbFZD"}>
                     <div className="w-10 h-10 flex items-center justify-center">
@@ -45,6 +45,14 @@ export default function ContactPage() {
                         </svg>
                     </div>
                     <span className="text-lg text-gray-800 dark:text-white font-semibold">Official Account Line</span>
+                </Link>
+            </div>
+            <div className="flex items-center space-x-4">
+                <Link className="cursor-pointer flex items-center gap-2" href={"https://www.instagram.com/fti24itb/"}>
+                    <div className="w-10 h-10 flex items-center justify-center">
+                        <Image src={"/instagram.png"} width={30} height={30} alt="instagram"/>
+                    </div>
+                    <span className="text-lg text-gray-800 dark:text-white font-semibold">Official Instagram</span>
                 </Link>
             </div>
 
@@ -74,7 +82,7 @@ export default function ContactPage() {
           {/* Phone 1 */}
           <div className="relative z-10 transform -translate-x-8">
             <div className="w-48 h-96 bg-black rounded-3xl p-2 shadow-2xl">
-              <div className="w-full h-full bg-gradient-to-br from-sky-300 to-sky-500 rounded-2xl relative overflow-hidden">
+              <div className="w-full h-full bg-white dark:bg-gray-600 rounded-2xl relative overflow-hidden">
                 {/* Notch */}
                 <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-4 bg-black rounded-full"></div>
                 {/* Screen content area */}
@@ -86,7 +94,7 @@ export default function ContactPage() {
           {/* Phone 2 */}
           <div className="relative z-20 transform rotate-5 md:rotate-20 -translate-x-10 md:-translate-y-4 ">
             <div className="w-48 h-96 bg-black rounded-3xl p-2 shadow-2xl">
-              <div className="w-full h-full bg-gradient-to-br from-sky-300 to-sky-500 rounded-2xl relative overflow-hidden">
+              <div className="w-full h-full bg-white dark:bg-gray-600 rounded-2xl relative overflow-hidden">
                 {/* Notch */}
                 <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-4 bg-black rounded-full"></div>
                 {/* Screen content area */}

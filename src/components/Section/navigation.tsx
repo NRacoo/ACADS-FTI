@@ -26,6 +26,9 @@ export default function Navigation(){
     },
     {
         name:"Contact Us", href:"/contact"
+    },
+    {
+        name:"Profile", href:"/profile"
     }]
     
 
