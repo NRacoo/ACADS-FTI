@@ -16,7 +16,7 @@ export default function Navigation(){
         name:"Library", href:"/library"
     },
     {
-        name:"major", href:"/major"
+        name:"Major", href:"/major"
     },
     {
         name:"Calc", href:"/gpa"

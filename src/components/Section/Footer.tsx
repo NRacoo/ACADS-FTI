@@ -16,7 +16,7 @@ export default function Footer() {
         name:"Library", item:"/library"
     },
     {
-        name:"major", item:"/major"
+        name:"Major", item:"/major"
     },
     {
         name:"Calc", item:"/gpa"
