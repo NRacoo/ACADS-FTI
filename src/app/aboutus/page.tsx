@@ -48,7 +48,7 @@ export default function aboutUs(){
             </section>
 
             <section ref={sectionRef} className=" lg:block max-w-sceren-xl mx-auto px-4 "> 
-                    <motion.div className="text-center mb-4"
+                    <motion.div className="text-center mb-8"
                         whileInView={{opacity: 1, y:0}}
                         initial={{opacity:0, y:100}}
                         transition={{ease:"easeInOut", duration: 0.7}}>
@@ -65,7 +65,7 @@ export default function aboutUs(){
                         whileInView={{opacity: 1, y:0}}
                         initial={{opacity:0, y:100}}
                         transition={{ease:"easeInOut", duration: 0.7}}
-                         className=" md:text-justify leading-relaxed" >
+                         className=" md:text-justify leading-relaxed px-4" >
                             <Reveal 
                             text="Fakultas Teknologi Industri di Institut Teknologi Bandung &#40;FTI ITB&#41; resmi berdiri pada tahun 1973. Namun, sebagian kegiatan akademik di departemen-departemen yang tergabung dalam FTI ITB sudah berlangsung lebih dulu. Sampai Desember 2005,
                             departemen-departemen yang berada di bawah FTI ITB meliputi Departemen Teknik Kimia, Teknik Mesin, Teknik Elektro, Teknik Fisika,
@@ -94,8 +94,8 @@ export default function aboutUs(){
                         whileInView={{opacity: 1, y:0}}
                         initial={{opacity:0, y:100}}
                         transition={{ease:"easeInOut", duration: 0.7}}
-                        className="md:px-20 py-4 md:py-0">
-                            <div className="flex flex-col">
+                        className=" py-4 md:py-0">
+                            <div className="flex flex-col px-4">
                                 <motion.h1 
                                     className="hidden md:block text-center py-4 text-4xl font-bold"
                                     whileInView={{opacity: 1, y:0}}
@@ -105,7 +105,7 @@ export default function aboutUs(){
                                 text="Menjadi Fakultas yang unggul, bermartabat, mandiri, dan diakui dunia di bidang teknologi industri serta memandu perubahan yang mampu meningkatkan kesejahteraan bangsa Indonesia dan dunia."/>
                             </div>
                         </motion.div>
-                        <motion.div className={`flex hidden md:block pl-50`}
+                        <motion.div className={`flex hidden md:block lg:pl-50`}
                         whileInView={{opacity: 1, y:0}}
                         initial={{opacity:0, y:100}}
                         transition={{ease:"easeInOut", duration: 0.7}}>
@@ -126,7 +126,7 @@ export default function aboutUs(){
                         transition={{ease:"easeInOut", duration: 0.7}}>
                             <Image width={400} height={400} alt="visi misi" className="rounded-lg shadow-lg object-cover" src={"/visi.png"}/>
                         </motion.div>
-                        <motion.div className={`flex hidden md:block translate-x-58`}
+                        <motion.div className={`flex hidden md:block lg:translate-x-1/5`}
                         whileInView={{opacity: 1, y:0}}
                         initial={{opacity:0, y:100}}
                         transition={{ease:"easeInOut", duration: 0.7}}>
@@ -138,7 +138,7 @@ export default function aboutUs(){
                         initial={{opacity:0, y:100}}
                         transition={{ease:"easeInOut", duration: 0.7}}
                         className="py-4 md:py-0">
-                            <div className="flex flex-col">
+                            <div className="flex flex-col px-4">
                                 <motion.h1 
                                     className="hidden md:block text-center py-4 text-4xl font-bold"
                                     whileInView={{opacity: 1, y:0}}
