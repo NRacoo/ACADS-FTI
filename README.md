@@ -15,8 +15,5 @@ Website ini merupakan platform terpadu untuk mahasiswa dalam mengakses berbagai 
 
 
 ## Pengembang
-<<<<<<< HEAD
 - Aria Aura Rachman
-=======
-- Aria Aura Rachman
->>>>>>> 3eb69f2 (add footer)
+
