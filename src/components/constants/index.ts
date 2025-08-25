@@ -33,3 +33,28 @@ export const ftiRiData = [
   { range: "93.0-93.9", frequency: 5 },
   { range: "94.0-94.9", frequency: 7 },
 ]
+export const mandiriFTI= [
+  { range: "84-86", frequency: 1 },
+  { range: "86-88", frequency: 2 },
+  { range: "88-90", frequency: 1 },
+  { range: "90-92", frequency: 4 },
+  { range: "92-94", frequency: 4 },
+  { range: "96-98", frequency: 1 },
+]
+export const mandiriFTINon= [
+  { range: "85-90", frequency: 1 },
+  { range: "90-95", frequency: 6 },
+  { range: "95-100", frequency: 1 },
+]
+export const mandiriFTIPem= [
+  { range: "86-88", frequency: 1 },
+  { range: "88-90", frequency: 1 },
+  { range: "90-92", frequency: 1 },
+  { range: "92-94", frequency: 1 },
+]
+export const mandiriUTBk= [
+  { range: "550-600", frequency: 1 },
+  { range: "600-650", frequency: 3 },
+  { range: "650-700", frequency: 5 },
+  { range: "700-750", frequency: 2 },
+]
