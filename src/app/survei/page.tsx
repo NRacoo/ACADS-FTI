@@ -1,32 +1,37 @@
 "use client"
-
-import { ftiCData, ftiData, ftiRiData, ftiSPData } from "@/components/constants"
+import SnbpSection from "@/components/Section/survei/snbp"
+import SnbtSection from "@/components/Section/survei/snbt"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import ChartPage from "@/components/ui/chartComponents"
+import ChartIndex from "@/components/ui/indexSnbt"
 
 export default function Survei() {
     return (
         <div className="min-h-screen bg-linear-to-t from-sky-400 py-20 p-6">
             <h1 className="text-2xl md:text-4xl text-center pb-4 font-bold">Jalur Masuk</h1>
-            <section>
-               <div className="grid-cols-1 lg:grid-cols-2">
+           <SnbpSection/>
+           <section className="pt-4 pb-4">
                 <Card>
                     <CardHeader>
-                        <CardTitle className="text-center space-y-4">
-                            <h1 className="text-xl lg:text-2xl">Persebaran nilai SNBP</h1>
+                        <CardTitle className="space-y-4">
+                            <div className="flex flex-row gap-2 items-center justify-center">
+                                <div className="flex flex-row justify-center items-center gap-2">
+                                    <div className="w-12 h-2 rounded-lg bg-[#2563eb]"/>
+                                    <h1>Nilai Minimum</h1>
+                                </div>
+                                <div className="flex flex-row justify-center items-center gap-2">
+                                    <div className="w-12 h-2 rounded-lg bg-[#60a5fa]"/>
+                                    <h1>Rata-Rata</h1>
+                                </div>
+                            </div>
                         </CardTitle>
                     </CardHeader>
                     <CardContent>
-                    <div className="grid grid-cols-1 lg:grid-cols-2">
-                        <ChartPage title="FTI-SP" data={ftiSPData} minValue={83} avgValue={91.5}/>
-                        <ChartPage title="FTI" data={ftiData} minValue={84.6} avgValue={91.3}/>
-                        <ChartPage title="FTI-RI" data={ftiRiData} minValue={86.3} avgValue={89.48}/>
-                        <ChartPage title="FTI-C" data={ftiCData} minValue={89.1} avgValue={91.83}/>
-                    </div>
+                        <ChartIndex/>
                     </CardContent>
                 </Card>
-               </div>
-            </section>
+           </section>
+           <SnbtSection/>
         </div>
     )
 }

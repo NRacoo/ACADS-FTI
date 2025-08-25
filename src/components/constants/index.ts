@@ -10,7 +10,7 @@ export const ftiSPData = [
 ];
 
 export const ftiData = [
-  { range: "86-87", frequency: 6 },
+  { range: "84-87", frequency: 6 },
   { range: "88-89", frequency: 38 },
   { range: "90-91", frequency: 55 },
   { range: "92-93", frequency: 43 },
