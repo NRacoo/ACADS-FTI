@@ -37,12 +37,12 @@ export default function Footer() {
                         <div className="flex items-start space-x-2">
                             <Link className="cursor-pointer flex items-center" href={"/"}>
                                 <Image src={"/ftilogo.png"} width={50} height={50} alt="logo"/>
-                                <span className="font-bold text-2xl">ACADS-FTI</span>
+                                <span className="font-bold text-2xl text-white">ACADS-FTI</span>
                             </Link>
                         </div>
                     </div>
                     <div>
-                        <h3 className="font-semibold text-xl">Content</h3>
+                        <h3 className="font-semibold text-xl text-white">Content</h3>
                         <div className="space-y-2 grid grid-cols-3">
                             {items.map((item, index) => (
                                 <div className="cursor-pointer" key={index}>

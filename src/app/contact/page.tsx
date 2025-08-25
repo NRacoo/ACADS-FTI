@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export default function ContactPage() {
     return (
-    <div className="min-h-screen bg-linear-to-t from-sky-400 flex items-center justify-center p-8">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div className="min-h-screen bg-linear-to-t from-sky-400 items-center justify-center grid grid-cols-1 lg:grid-cols-2">
+      <div className="max-w-6xl w-full gap-12 items-center p-8">
         
         <div className="space-y-8">
           <div>
@@ -55,27 +55,12 @@ export default function ContactPage() {
                     <span className="text-lg text-gray-800 dark:text-white font-semibold">Official Instagram</span>
                 </Link>
             </div>
-
-            {/* Email 
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-sky-400 rounded-full flex items-center justify-center">
-                <Mail className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl text-gray-800">Wwwwwwwwwwwww</span>
-            </div>
-
-           
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-sky-400 rounded-full flex items-center justify-center">
-                <MapPin className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl text-gray-800">123 Anywhere ST., Any City, ST 12345</span>
-            </div>*/}
           </div>
         </div>
 
+      </div>
         {/* Right side - Mobile Phones Illustration */}
-        <div className="relative flex items-center justify-center mx-auto">
+        <div className="relative flex items-center justify-center overflow-hidden max-w-6xl sm:max-w-full h-full">
           {/* Background Circle */}
           <div className="absolute inset-0 z-10 overflow-hidden rounded-full hidden md:block"><Ripple/></div>
 
@@ -103,7 +88,6 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </div>
     </div>
     )
 }

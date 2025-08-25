@@ -43,7 +43,7 @@ export default function aboutUs(){
     return (
         <div className="min-h-screen bg-linear-to-t from-sky-400">
             {/* Carousel */}
-            <section className="py-16 lg:py-20">
+            <section className="py-16 lg:py-20 px-4">
                     <ImageCarousel/>
             </section>
 
