@@ -5,7 +5,6 @@ import SnbpSection from "@/components/Section/survei/snbp"
 import SnbtSection from "@/components/Section/survei/snbt"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import ChartIndex from "@/components/ui/indexSnbt"
-import ChartIndexJurusan from "@/components/ui/jurusan"
 
 export default function Survei() {
     return (
@@ -35,6 +34,7 @@ export default function Survei() {
            </section>
            <SnbtSection/>
            <MandiriPage/>
+           <h1 className="text-center text-2xl md:text-4xl pt-4 font-bold">Jurusan</h1>
            <JurusanPage/>
         </div>
     )
