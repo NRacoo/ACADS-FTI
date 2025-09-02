@@ -296,7 +296,7 @@ export const materiSemester2: courseDept[] = [
         image:"/materi/kalkulus.png", 
         imageAlt:"Matematika IIA",
         file:[
-          {id:"catatan", name:"Catatan", link:"https://drive.google.com/drive/folders/1-JHEfuBxXnIlbVgEa-YOOLh3ldJvtooE?usp=share_link"},
+          {id:"catatan", name:"Catatan", link:"https://drive.google.com/drive/folders/1-JHEfuBxXnIlbVgEa-YOOLh3ldJvtooE?usp=sharing"},
           {id:"silabus", name:"Silabus", link:"https://drive.google.com/drive/folders/1-Or1nAsukFjdlqiEuNCMlldwiPciUNY9?usp=sharing"},
           {id:"tutor", name:"Tutorial", link:"https://drive.google.com/drive/folders/1-1pc_kdePp4kk7j1e9RTneA-bw94fOcw"},
           {id:"kbf", name:"KBF & Kuis", link:"https://drive.google.com/drive/folders/14tTurpMIk_dzikpZcF7IzuJVkZyvF2VV?usp=sharing"},
