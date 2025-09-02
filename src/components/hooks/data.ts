@@ -312,7 +312,7 @@ export const materiSemester2: courseDept[] = [
         image:"/materi/kimia.png",
         imageAlt:"Kimia Dasar IIA",
         file:[
-          {id:"catatan", name:"Catatan", link:"hhttps://drive.google.com/drive/folders/1fIQPrdgYthjsNILUHMxQpJoTHY2M7nOH"},
+          {id:"catatan", name:"Catatan", link:"https://drive.google.com/drive/folders/1fIQPrdgYthjsNILUHMxQpJoTHY2M7nOH"},
           {id:"aturan", name:"Aturan Perkuliahan", link:"https://drive.google.com/drive/folders/1wYV3uKICd7BfX-RuynKwE6RNnJrXPQn3"},
           {id:"sil", name:"Silabus", link:"https://drive.google.com/drive/folders/1LL-Rcy2LWAirFOasw0vlYO8p0RGtXInh?usp=sharing"},
           {id:"kbf", name:"KBF & Kuis", link:"https://drive.google.com/drive/folders/1i-eJ4fdxMXwgzM25AiTiBq-Dn0zSn7Tr?usp=sharing"},
