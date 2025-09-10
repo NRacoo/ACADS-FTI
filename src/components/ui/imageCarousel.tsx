@@ -6,9 +6,13 @@ import Image from "next/image";
 import { useState } from "react";
 
 const images = [
+  "/makrab.jpeg",
   "/fti1.jpg",
-  "/fti2.jpg",
+  "/aksang.jpeg",
   "/fti3.jpg",
+  "/gtk.jpeg",
+  "/fti2.jpg",
+  "/pulang.jpeg"
 ];
 
 export default function ImageCarousel() {
