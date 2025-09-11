@@ -12,7 +12,8 @@ const images = [
   "/fti3.jpg",
   "/gtk.jpeg",
   "/fti2.jpg",
-  "/pulang.jpeg"
+  "/pulang.jpeg",
+  "/farewell.jpeg"
 ];
 
 export default function ImageCarousel() {

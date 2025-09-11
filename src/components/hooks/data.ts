@@ -43,7 +43,7 @@ export const activities: Activity[] = [
         id:5,
         title:"Farewell",
         description:"Farewell FTI “Luminara” merupakan sebuah acara yang diselenggarakan oleh massa FTI ITB 2024 sebagai penutup perjalanan satu tahun kebersamaan di Kampus Jatinangor. Acara ini hadir untuk merayakan momen transisi menuju tahun kedua perkuliahan, ketika massa FTI 2024 akan melanjutkan studi di kampus masing-masing sesuai jurusan. Dengan mengusung tema cahaya dan kebersamaan, Farewell FTI “Luminara” diharapkan dapat menjadi ruang refleksi, apresiasi, serta pengikat kenangan bersama, sehingga ikatan keluarga besar FTI 2024 tetap terjaga meskipun langkah telah berlanjut ke perjalanan berikutnya.",
-        image:"/makrab.jpeg",
+        image:"/farewell.jpeg",
         imageAlt:"farewell",
     },
     {
