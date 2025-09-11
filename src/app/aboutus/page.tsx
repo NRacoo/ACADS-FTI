@@ -152,7 +152,7 @@ export default function aboutUs(){
                         </div>
                     </div>
 
-                    <div className="space-y-20">
+                    <div className="space-y-20 max-w-full md:max-w-3xl lg:max-w-5xl mx-auto px-4">
                         {activities.map((activity, index) => (
                             
                                 <div key={activity.id}
@@ -167,7 +167,7 @@ export default function aboutUs(){
                                             <Image
                                             src={activity.image || "/placeholder.svg"}
                                             alt={activity.imageAlt}
-                                            width={600}
+                                            width={500}
                                             height={400}
                                             className="w-full h-auto object-cover rounded-3xl"
                                             />
