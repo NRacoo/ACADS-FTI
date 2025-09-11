@@ -48,7 +48,7 @@ export const activities: Activity[] = [
     },
     {
         id:6,
-        title:"Kumpul Angkatan(PulAng)",
+        title:"PulAng",
         description:"PulAng: Istirahat Bersama merupakan wadah bagi FTI 24 untuk penyaluran berupa report bulanan angkatan untuk evaluasi kerja BPA FTI 24, penguatan keeratan antarmassa FTI 24, dan diskusi dua arah antarmassa. Melalui agenda utama berupa report bulanan, ruang dialog dua arah, serta kegiatan bonding, PulAng hadir untuk menciptakan transparansi kinerja, mempererat ikatan antarmassa, dan menumbuhkan sense of belonging dalam keluarga besar FTI 24.",
         image:"/pulang.jpeg",
         imageAlt:"PulAng",
