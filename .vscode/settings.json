@@ -1,9 +1,0 @@
-{
-    "workbench.preferredDarkColorTheme": "Default Dark Modern",
-    "workbench.colorTheme": "GitHub Dark Default",
-    "editor.dropIntoEditor.preferences": [
-
-    ],
-    "debug.autoExpandLazyVariables": "auto",
-    "github.copilot.chat.agent.autoFix": false
-}
